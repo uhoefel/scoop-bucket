@@ -26,7 +26,7 @@
     "python -m pip install sympy",
     "python -m pip install jupyterlab",
     "python -m pip install notebook"
-  ]
+  ],
   "notes": [
     "This installs a number of other packages",
     "You may have to add the extras and java buckets via",
