@@ -1,8 +1,7 @@
 {
-  "version": "1.0",
-  "description": "Meta package to install both 7zip and Git",
+  "version": "1.0.0",
+  "description": "Meta package to install commonly used programs for Minerva",
   "homepage": "https://example.com",
-  "license": "MIT",
   "architecture": {
     "64bit": {
       "url": "https://github.com/excitoon/empty/releases/download/empty-1.0.7/empty-1.0.7.zip",
@@ -12,8 +11,22 @@
   "depends": [
     "7zip",
     "git",
-    "notepadplusplus"
+    "notepadplusplus",
+    "openjdk",
+    "openjdk22",
+    "maven",
+    "eclipse-java",
+    "graphviz",
+    "python"
   ],
+  "post_install": [
+    "python -m pip install --upgrade pip",
+    "python -m pip install matplotlib",
+    "python -m pip install scipy",
+    "python -m pip install sympy",
+    "python -m pip install jupyterlab",
+    "python -m pip install notebook"
+  ]
   "notes": [
     "This installs a number of other packages",
     "You may have to add the extras and java buckets via",
