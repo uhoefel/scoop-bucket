@@ -1,6 +1,7 @@
 {
   "version": "1.0",
   "description": "Meta package to install both 7zip and Git",
+  "homepage": "https://example.com",
   "license": "MIT",
   "architecture": {
     "64bit": {
@@ -8,7 +9,7 @@
       "hash": "ea8fac7c65fb589b0d53560f5251f74f9e9b243478dcb6b3ea79b5e36449c8d9",
       "extract_dir": "test1"
     },
-  }
+  },
   "depends": [
     "7zip",
     "git"
