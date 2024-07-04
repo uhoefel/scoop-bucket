@@ -1,6 +1,7 @@
 {
   "version": "1.0",
   "description": "Meta package to install both 7zip and Git",
+  "homepage": "https://example.com",
   "license": "MIT",
   "depends": [
     "7zip",
