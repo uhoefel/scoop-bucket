@@ -19,6 +19,16 @@
     "graphviz",
     "python"
   ],
+  "pre_install": [
+     "if (!(scoop bucket list | Select-String -Pattern 'extras')) {",
+     "    Write-Host 'Bucket \"extras\" is not added. Adding it now...';",
+     "    scoop bucket add extras;",
+     "}",
+     "if (!(scoop bucket list | Select-String -Pattern 'java')) {",
+     "    Write-Host 'Bucket \"java\" is not added. Adding it now...';",
+     "    scoop bucket add java;",
+     "}"
+   ],
   "post_install": [
     "python -m pip install --upgrade pip",
     "python -m pip install matplotlib",
