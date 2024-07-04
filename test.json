@@ -11,7 +11,8 @@
   },
   "depends": [
     "7zip",
-    "git"
+    "git",
+    "notepadplusplus"
   ],
   "notes": [
     "This installs a number of other packages",
