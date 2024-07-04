@@ -1,9 +1,14 @@
 {
   "version": "1.0",
   "description": "Meta package to install both 7zip and Git",
-  "homepage": "https://example.com",
-  "url": "https://example.com",
   "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/excitoon/empty/releases/download/empty-1.0.7/empty-1.0.7.zip",
+      "hash": "ea8fac7c65fb589b0d53560f5251f74f9e9b243478dcb6b3ea79b5e36449c8d9",
+      "extract_dir": "test1"
+    },
+  }
   "depends": [
     "7zip",
     "git"
