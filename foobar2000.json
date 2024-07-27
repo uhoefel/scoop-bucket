@@ -1,0 +1,36 @@
+{
+    "version": "2.1.4",
+    "description": "foobar2000 is an advanced freeware audio player for the Windows platform.",
+    "homepage": "https://www.foobar2000.org/",
+    "license": "foobar2000 license",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.foobar2000.org/getfile/foobar2000-x64_v2.1.4.exe",
+            "hash": "F948A6A49FF607493D366BB3F334269BC857DD1F5A5E881138A7DE10C2B7171D",
+            "installer": {
+                "script": [
+                    "Start-Process \"$dir\\foobar2000_v2.1.4.exe\" -ArgumentList \"/SILENT /DIR=$dir\" -Wait",
+                    "Remove-Item \"$dir\\foobar2000_v2.1.4.exe\""
+                ]
+            }
+        }
+    },
+    "bin": "foobar2000.exe",
+    "shortcuts": [
+        [
+            "foobar2000.exe",
+            "foobar2000"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.foobar2000.org/download",
+        "regex": "foobar2000_v([\\d.]+)\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.foobar2000.org/getfile/foobar2000-x64_v$cleanVersion.exe",
+            }
+        }
+    }
+}
