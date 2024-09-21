@@ -6,7 +6,12 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/afadil/wealthfolio/releases/download/v1.0.11/Wealthfolio_1.0.11_x64-setup.exe",
-            "hash": "75F6C97998ED73136FFADEFFE9EC864D3C91E22BF37E6BFAF8CED6F6C5A1BAB6"
+            "hash": "75F6C97998ED73136FFADEFFE9EC864D3C91E22BF37E6BFAF8CED6F6C5A1BAB6",
+            "installer": {
+                "args": [
+                    "/S"  // install silently
+                ]
+            }
         }
     },
     "bin": [
