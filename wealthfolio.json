@@ -9,7 +9,7 @@
             "hash": "75F6C97998ED73136FFADEFFE9EC864D3C91E22BF37E6BFAF8CED6F6C5A1BAB6",
             "installer": {
                 "args": [
-                    "/S"  // install silently
+                    "/S"
                 ]
             }
         }
